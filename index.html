@@ -1,116 +1,168 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Instagram Photo Feed</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/9caf2bfb66.js" crossorigin="anonymous"></script>
-  </head>
 
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-              <i class="fa-brands fa-instagram mr-1 p-2"></i>
-              <span>Instagram</span>
-            </a>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <ul class="navbar-nav align-items-center">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">
-                    <span class="btn btn-success">
-                      Create a new post
-                    </span>
-                  </a>
-                </li>
-                <li class="nav-item dropdown-center">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-gear"></i>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Photo Feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/9caf2bfb66.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="fa-brands fa-instagram mr-1 p-2"></i>
+            <span>Instagram</span>
+          </a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <span class="btn btn-success">
+                    Create a new post
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item dropdown-center">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
-      <div class="row">
-        <div class="col">
-          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        </div>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="col">
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+              type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                class="fa-solid fa-table-cells"></i></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+              type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                class="fa-solid fa-square"></i></button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="container-fluid">
               <div class="row">
-                <div class="col">
-                  <img class="col-3 img-fluid" src="https://elviajerofeliz.com/wp-content/uploads/2018/05/shutterstock_569546482m.jpg"></img>
-                  <img class="col-3 img-fluid" src="https://i1.wp.com/www.vortexmag.net/wp-content/uploads/2017/09/A-panoramic-view-of-the-walled-city-Dubrovnik-Croatia-1-iloveimg-compressed-e1519406777143.jpg?fit=1200%2C818&ssl=1"></img>
-                  <img class="col-3 img-fluid" src="https://www.nasestradasdoplaneta.com.br/wp-content/uploads/2018/07/Croacia.jpg"></img>
-                  <img class="col-3 img-fluid" src="fotos/20230906_163602.jpg"></img>
-                  <img class="col-3 img-fluid" src="fotos/amsterdam.jpg"></img>
-                  <img class="col-3 img-fluid" src="fotos/barcelona.jpg"></img>
-                  <img class="col-3 img-fluid" src="fotos/eiffel.jpg"></img>
-                  <img class="col-3 img-fluid" src="fotos/versalles.jpg"></img>
-                  <img class="col-3 img-fluid" src="fotos/praga.jpg"></img>
-                  <img class="col-3 img-fluid" src="fotos/frankfurt.jpg"></img>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img class="img-fluid"
+                    src="https://elviajerofeliz.com/wp-content/uploads/2018/05/shutterstock_569546482m.jpg"></img>
                 </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img class="img-fluid"
+                    src="https://i1.wp.com/www.vortexmag.net/wp-content/uploads/2017/09/A-panoramic-view-of-the-walled-city-Dubrovnik-Croatia-1-iloveimg-compressed-e1519406777143.jpg?fit=1200%2C818&ssl=1"></img>
+                </div>  
+                <div class="col-lg-4 col-md-6 col-sm-12"> 
+                  <img class="img-fluid"
+                    src="https://www.nasestradasdoplaneta.com.br/wp-content/uploads/2018/07/Croacia.jpg"></img>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img class="img-fluid"
+                    src="https://elviajerofeliz.com/wp-content/uploads/2018/05/shutterstock_569546482m.jpg"></img>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img class="img-fluid"
+                    src="https://i1.wp.com/www.vortexmag.net/wp-content/uploads/2017/09/A-panoramic-view-of-the-walled-city-Dubrovnik-Croatia-1-iloveimg-compressed-e1519406777143.jpg?fit=1200%2C818&ssl=1"></img>
+                </div>  
+                <div class="col-lg-4 col-md-6 col-sm-12"> 
+                  <img class="img-fluid"
+                    src="https://www.nasestradasdoplaneta.com.br/wp-content/uploads/2018/07/Croacia.jpg"></img>
+                </div>
+              </div>     
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img class="img-fluid"
+                    src="https://elviajerofeliz.com/wp-content/uploads/2018/05/shutterstock_569546482m.jpg"></img>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img class="img-fluid"
+                    src="https://i1.wp.com/www.vortexmag.net/wp-content/uploads/2017/09/A-panoramic-view-of-the-walled-city-Dubrovnik-Croatia-1-iloveimg-compressed-e1519406777143.jpg?fit=1200%2C818&ssl=1"></img>
+                </div>  
+                <div class="col-lg-4 col-md-6 col-sm-12"> 
+                  <img class="img-fluid"
+                    src="https://www.nasestradasdoplaneta.com.br/wp-content/uploads/2018/07/Croacia.jpg"></img>
+                </div>
+              </div> 
+            </div>  
+          </div>
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="card mx-auto m-4" style="width: 36rem;">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title p-1">La primera foto</h5>
+                <p>12/20</p>
+              </div>
+              <img src="https://elviajerofeliz.com/wp-content/uploads/2018/05/shutterstock_569546482m.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><strong>345 likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
               </div>
             </div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-              <div class="card mx-auto m-4" style="width: 36rem;">
-                <div class="d-flex justify-content-between">
-                  <h5 class="card-title p-1">La primera foto</h5>
-                  <p>12/20</p>
-                </div>
-                <img src="https://elviajerofeliz.com/wp-content/uploads/2018/05/shutterstock_569546482m.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text"><strong>345 likes</strong></p>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+            <div class="card mx-auto m-4" style="width: 36rem;">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title p-1">La Segunda foto</h5>
+                <p>45/87</p>
               </div>
-              <div class="card mx-auto m-4" style="width: 36rem;">
-                <div class="d-flex justify-content-between">
-                  <h5 class="card-title p-1">La Segunda foto</h5>
-                  <p>45/87</p>
-                </div>
-                <img src="https://i1.wp.com/www.vortexmag.net/wp-content/uploads/2017/09/A-panoramic-view-of-the-walled-city-Dubrovnik-Croatia-1-iloveimg-compressed-e1519406777143.jpg?fit=1200%2C818&ssl=1" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text"><strong>1598 likes</strong></p>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+              <img
+                src="https://i1.wp.com/www.vortexmag.net/wp-content/uploads/2017/09/A-panoramic-view-of-the-walled-city-Dubrovnik-Croatia-1-iloveimg-compressed-e1519406777143.jpg?fit=1200%2C818&ssl=1"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><strong>1598 likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
               </div>
-              <div class="card mx-auto m-4" style="width: 36rem;">
-                <div class="d-flex justify-content-between">
-                  <h5 class="card-title p-1">La tercera foto</h5>
-                  <p>8/67</p>
-                </div>
-                <img src="https://www.nasestradasdoplaneta.com.br/wp-content/uploads/2018/07/Croacia.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text"><strong>543 likes</strong></p>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+            </div>
+            <div class="card mx-auto m-4" style="width: 36rem;">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title p-1">La tercera foto</h5>
+                <p>8/67</p>
+              </div>
+              <img src="https://www.nasestradasdoplaneta.com.br/wp-content/uploads/2018/07/Croacia.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><strong>543 likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
