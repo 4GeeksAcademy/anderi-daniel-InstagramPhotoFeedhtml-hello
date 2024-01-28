@@ -45,14 +45,18 @@
       </div>
       <div class="row">
         <div class="col">
-          <ul class="nav nav-tabs justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
+          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
             </li>
           </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+          </div>
         </div>
       </div>
     </div>
