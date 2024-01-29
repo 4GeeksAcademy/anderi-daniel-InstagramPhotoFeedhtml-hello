@@ -24,11 +24,41 @@
             <ul class="navbar-nav align-items-center">
               <li class="nav-item active">
                 <a class="nav-link" href="#">
-                  <span class="btn btn-success">
+                  <span class="btn btn-success" data-bs-toggle="modal" data-bs-target="#miModal">
                     Create a new post
                   </span>
                 </a>
               </li>
+              <div class="modal" tabindex="-1" id="miModal" role="dialog" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Create a new post</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h6>Caption:</h6>
+                      <div class="input-group mb-3 mi-input">
+                        <input type="text" class="form-control" placeholder="Add the caption of your post here" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="iconosModal">
+                        <div class="container">
+                          <div class="row">
+                            <button type="button" class="col-1 btn btn-light border" style="
+                            border-right-width: 5px;
+                            margin-right: 5px;"><i class="fa-solid fa-camera mr-1"></i></button>
+                            <button type="button" class="col-1 btn btn-light border"><i class="fa-solid fa-location-dot"></i></button>
+                          </div>  
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <li class="nav-item dropdown-center">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                   aria-expanded="false">

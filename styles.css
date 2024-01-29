@@ -5,11 +5,24 @@
     padding: 6px;
   }
 
-  .col-lg-4.col-md-6.col-sm-12 {
+.col-lg-4.col-md-6.col-sm-12 {
     padding: 0;
   } 
 
-  .dropdown-menu {
+.dropdown-menu {
     right: 0;
     left: auto;
   }
+
+  .iconosModal{
+    padding: 4px;
+    margin-top: 6px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 1rem;
+  }
+
+  .mi-input {
+    height: calc(1.5em + 2rem);
+  }
+  
